@@ -1,6 +1,5 @@
 from fpdf import FPDF
 from datetime import datetime
-import webbrowser
 import os
 import string
 from random import choice
@@ -76,7 +75,6 @@ class Certificate:
 
         # save report to file
         pdf.output(name=self.filename)
-        #webbrowser.open(self.path)
 
 if __name__ == "__main__":
     report = Certificate("A G", "20 Hz", "16000 Hz")
